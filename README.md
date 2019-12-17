@@ -10,6 +10,38 @@ $ python3 VMTranslator.py BasicTest.vm
 # => creates BasicTest.asm file
 ```
 
+## VM Language Translations:
+
+* arithmetic/logic commands:
+  * `add`
+  * `sub`
+  * `neg`
+  * `eq`
+  * `gt`
+  * `lt`
+  * `and`
+  * `or`
+  * `not`
+* memory segment commands:
+  * `push/pop <segment> i` for:
+    * `local`
+    * `argument`
+    * `this`
+    * `that`
+    * `constant`
+    * `static`
+    * `pointer`
+    * `temp`
+* branching commands:
+  * `goto <label>`
+  * `if-goto <label>`
+  * `label <label>`
+* function commands:
+  * `call <functionName> <nVars>`
+  * `function <functionName> <nArgs>`
+  * `return`
+
+
 ## Example
 
 Turns:
